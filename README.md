@@ -108,9 +108,10 @@ O agente está **funcionando perfeitamente**, processando consultas sobre a docu
 - **Google** - Pela API Gemini que deu vida ao assistente
 - **Comunidade ONE** - Pelas trocas e parcerias ao longo da jornada
 
-### 🌟 Projeto desenvolvido durante o desafio **AI Tech Builder** do **ONE - Oracle Next Education**, em parceria com a **Alura**.
-
 ## 👤 Autor
 
 - **Nome** - João Clark
 - **LinkedIn** - https://www.linkedin.com/in/joaoclark/
+
+### 🌟 Projeto desenvolvido durante o desafio **AI Tech Builder** do **ONE - Oracle Next Education**, em parceria com a **Alura**.
+
