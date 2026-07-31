@@ -33,7 +33,8 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 
 ## 📁 Estrutura do Projeto
 
-pegasus-sage/
+```
+
 ├── challenge_one_ai_tech_builder.ipynb # Notebook principal
 ├── docs/ # Documentos técnicos (PDFs)
 ├── src/ # Código fonte
@@ -44,6 +45,8 @@ pegasus-sage/
 ├── README.md # Documentação
 ├── requirements.txt # Dependências
 └── .env.example # Variáveis de ambiente
+
+```
 
 ## 📂 Documentos Analisados
 
