@@ -54,6 +54,24 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 - "Como funciona o fluxo de resposta a incidentes SEV-1?"
 - "Quais tecnologias são utilizadas no ecossistema back-end?"
 
+## 🔮 Roadmap do Projeto
+
+### 🟢 Concluído
+
+- ✅ Extração e processamento de PDFs com PyPDF2
+- ✅ Integração com Google Gemini API
+- ✅ Interface interativa no Google Colab
+
+### 🔴 Planejado
+
+- ⏳ Sistema RAG com ChromaDB
+- ⏳ Interface web com Streamlit
+- ⏳ Cache inteligente de respostas
+- 📋 API REST com FastAPI
+- 📋 Integração com Slack/Teams
+- 📋 Dashboard de métricas e monitoramento
+- 📋 Fine-tuning do modelo para HealthTech
+
 ## ✅ Status do Agente
 
 O agente está **funcionando perfeitamente**, processando consultas sobre a documentação técnica da Santo Pegasus Soluciones com **tempo médio de resposta inferior a 2 segundos**.
