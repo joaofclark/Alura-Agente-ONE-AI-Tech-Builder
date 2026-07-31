@@ -1,13 +1,10 @@
 # Alura-Agente-ONE-AI-Tech-Builder
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-![Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?style=for-the-badge&logo=googlegemini&logoColor=white)
-![PyPDF2](https://img.shields.io/badge/PyPDF2-0073E6?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Colab-Notebook-orange?style=for-the-badge&logo=googlecolab&logoColor=white)
+![Gemini 1.5 Flash](https://img.shields.io/badge/Gemini-1.5%20Flash-purple?style=for-the-badge&logo=googlegemini&logoColor=white)
+![PyPDF2 3.0](https://img.shields.io/badge/PyPDF2-3.0-blue?style=for-the-badge&logo=python&logoColor=white)
+
 
 Agente de IA desenvolvido como parte do desafio **ONE AI Tech Builder**. 
 Ele foi criado para atuar como um assistente virtual especializado na análise e consulta de 
