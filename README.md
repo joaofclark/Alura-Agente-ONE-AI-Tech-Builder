@@ -77,9 +77,9 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 
 ![Base de Processamento](Prints/Base-de-Processamento-da-pergunta.png)
 
-### Upload dos PDFs
+### Carregamento dos PDFs
 
-![Upload dos PDFs](assets/screenshots/02-upload-pdfs.png)
+![Carregamento dos PDFs](Prints/Carregamento-de-arquivos-PDF.png)
 
 ### Fazendo uma pergunta
 
