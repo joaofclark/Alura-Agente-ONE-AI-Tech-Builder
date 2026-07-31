@@ -9,3 +9,42 @@ documentos técnicos da Santo Pegasus Soluciones, uma empresa de tecnologia do s
 O agente utiliza o **Google Gemini (Flash)** para processamento de linguagem natural e tem como 
 objetivo facilitar o acesso à informação técnica, acelerando o onboarding de novos colaboradores 
 e auxiliando times de engenharia na consulta rápida de documentação.
+
+## 🎯 Funcionalidades
+
+- Extração e processamento de texto de múltiplos PDFs
+- Respostas baseadas exclusivamente no conteúdo dos documentos fornecidos
+- Interface interativa no Google Colab para perguntas e respostas
+- Busca inteligente por trechos relevantes dos documentos
+- Respostas rápidas e diretas com citação das fontes
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Google Gemini (Flash)** - Modelo de linguagem para respostas rápidas
+- **PyPDF2** - Extração de texto de arquivos PDF
+- **Google Colab** - Ambiente de desenvolvimento e execução
+- **Python** - Linguagem de programação
+
+## 📂 Documentos Analisados
+
+- Arquitetura de Microsserviços e Mapa de Domínios
+- Guia Oficial de Engenharia Back-end
+- Guia Oficial de Engenharia Front-end
+- Manual de Onboarding
+- Protocolo de Resposta a Incidentes (SRE)
+
+## 🚀 Como Executar
+
+1. Abra o notebook no Google Colab
+2. Configure a chave da API Gemini no gerenciador de secrets (`Alura_Agente`)
+3. Execute todas as células
+4. Faça upload dos PDFs quando solicitado
+5. Comece a fazer perguntas sobre os documentos!
+
+## 📝 Exemplo de Perguntas
+
+- "Qual é o princípio arquitetônico que proíbe o acesso direto ao banco de dados de outro microsserviço?"
+- "Quais são os pilares da cultura Engineering Excellence da Santo Pegasus?"
+- "Como funciona o fluxo de resposta a incidentes SEV-1?"
+- "Quais tecnologias são utilizadas no ecossistema back-end?"
+
