@@ -71,6 +71,24 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 - "Como funciona o fluxo de resposta a incidentes SEV-1?"
 - "Quais tecnologias são utilizadas no ecossistema back-end?"
 
+## 📷 Capturas de Telas
+
+### Base de Processamento
+
+![Base de Processamento](Prints/Base-de-Processamento-da-Pergunta.png)
+
+### Upload dos PDFs
+
+![Upload dos PDFs](assets/screenshots/02-upload-pdfs.png)
+
+### Fazendo uma pergunta
+
+![Exemplo de Pergunta](assets/screenshots/03-exemplo-pergunta.png)
+
+### Resposta do agente
+
+![Resposta do Agente](assets/screenshots/04-exemplo-resposta.png)
+
 ## 🔮 Roadmap do Projeto
 
 ### 🟢 Concluído
