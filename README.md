@@ -31,6 +31,20 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 - **Google Colab** - Ambiente de desenvolvimento e execução
 - **Python** - Linguagem de programação
 
+## 📁 Estrutura do Projeto
+
+pegasus-sage/
+├── challenge_one_ai_tech_builder.ipynb # Notebook principal
+├── docs/ # Documentos técnicos (PDFs)
+├── src/ # Código fonte
+│ ├── core/ # Lógica principal
+│ ├── rag/ # Sistema RAG (futuro)
+│ └── utils/ # Funções auxiliares
+├── tests/ # Testes automatizados
+├── README.md # Documentação
+├── requirements.txt # Dependências
+└── .env.example # Variáveis de ambiente
+
 ## 📂 Documentos Analisados
 
 - Arquitetura de Microsserviços e Mapa de Domínios
