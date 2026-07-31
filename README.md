@@ -100,10 +100,10 @@ O agente está **funcionando perfeitamente**, processando consultas sobre a docu
 
 ## 🙏 Agradecimentos
 
-**Alura** | Pelo conteúdo de excelência e metodologia que transforma vidas |
-**Oracle** | Pelo programa ONE que abre portas para novos talentos |
-**Instrutores** | Pela dedicação, paciência e conhecimento compartilhado |
-**Mentores** | Pelos feedbacks valiosos e direcionamento durante o desafio |
-**Santo Pegasus** | Pela documentação rica que serviu como base para o agente |
-**Google** | Pela API Gemini que deu vida ao assistente |
-**Comunidade ONE** | Pelas trocas e parcerias ao longo da jornada |
+- **Alura** Pelo conteúdo de excelência e metodologia que transforma vidas
+- **Oracle** Pelo programa ONE que abre portas para novos talentos
+- **Instrutores** Pela dedicação, paciência e conhecimento compartilhado
+- **Mentores** Pelos feedbacks valiosos e direcionamento durante o desafio
+- **Santo Pegasus** Pela documentação rica que serviu como base para o agente
+- **Google** Pela API Gemini que deu vida ao assistente
+- **Comunidade ONE** Pelas trocas e parcerias ao longo da jornada
