@@ -4,6 +4,7 @@
 ![Google Colab](https://img.shields.io/badge/Colab-Notebook-orange?style=for-the-badge&logo=googlecolab&logoColor=white)
 ![Gemini 1.5 Flash](https://img.shields.io/badge/Gemini-1.5%20Flash-purple?style=for-the-badge&logo=googlegemini&logoColor=white)
 ![PyPDF2 3.0](https://img.shields.io/badge/PyPDF2-3.0-blue?style=for-the-badge&logo=python&logoColor=white)
+![Agente](https://img.shields.io/badge/Agente-Respondendo-brightgreen?style=for-the-badge)
 
 Agente de IA desenvolvido como parte do desafio **ONE AI Tech Builder**. 
 Ele foi criado para atuar como um assistente virtual especializado na análise e consulta de 
