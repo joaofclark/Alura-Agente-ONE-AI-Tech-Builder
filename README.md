@@ -81,13 +81,13 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 
 ![Carregamento dos PDFs](Prints/Carregamento-de-arquivos-PDF.png)
 
-### Fazendo uma pergunta
+### Teste Rápido e Tela de Pergunta
 
-![Exemplo de Pergunta](assets/screenshots/03-exemplo-pergunta.png)
+![Teste Rápido e Tela de Pergunta](Prints/Teste-rápido-e-tela-de-pergunta.png)
 
-### Resposta do agente
+### Pergunta Respondida e Conteúdo Não Encontrado
 
-![Resposta do Agente](assets/screenshots/04-exemplo-resposta.png)
+![Pergunta Respondida e Conteúdo Não Encontrado](Prints/Pergunta-respondida-e-conteúdo-não-encontrado.png)
 
 ## 🔮 Roadmap do Projeto
 
