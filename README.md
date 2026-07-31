@@ -75,7 +75,7 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 
 ### Base de Processamento
 
-![Base de Processamento](Prints/Base-de-Processamento-da-Pergunta.png)
+![Base de Processamento](Prints/Base-de-Processamento-da-pergunta.png)
 
 ### Upload dos PDFs
 
