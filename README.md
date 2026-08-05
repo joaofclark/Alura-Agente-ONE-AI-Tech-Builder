@@ -74,11 +74,9 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 ## 📷 Capturas de Telas
 
 ### Agente Funcionando
-
 ![Agente Funcionando](Prints/Challenge Alura Agente - agente funcionando.png)
 
 ### Interação com o agente - pergunta respondida
-
 ![Exemplo de Pergunta](Prints/Challenge Alura Agente - pergunta respondida.png)
 
 ## 🔮 Roadmap do Projeto
