@@ -73,21 +73,13 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 
 ## 📷 Capturas de Telas
 
-### Base de Processamento
+### Agente Funcionando
 
-![Base de Processamento](Prints/Base-de-Processamento-da-pergunta.png)
+![Agente Funcionando](Prints/Challenge Alura Agente - agente funcionando.png)
 
-### Carregamento dos PDFs
+### Interação com o agente - pergunta respondida
 
-![Carregamento dos PDFs](Prints/Carregamento-de-arquivos-PDF.png)
-
-### Teste Rápido e Tela de Pergunta
-
-![Teste Rápido e Tela de Pergunta](Prints/Teste-rápido-e-tela-de-pergunta.png)
-
-### Pergunta Respondida e Conteúdo Não Encontrado
-
-![Pergunta Respondida e Conteúdo Não Encontrado](Prints/Pergunta-respondida-e-conteúdo-não-encontrado.png)
+![Exemplo de Pergunta](Prints/Challenge Alura Agente - pergunta respondida.png)
 
 ## 🔮 Roadmap do Projeto
 
