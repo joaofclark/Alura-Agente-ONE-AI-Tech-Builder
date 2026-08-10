@@ -119,7 +119,7 @@ Meu Drive/
 
 ## ✅ Status do Agente
 
-O agente está **funcionando perfeitamente**, processando consultas sobre a documentação técnica da Santo Pegasus Soluciones com **tempo médio de resposta inferior a 2 segundos**.
+O agente está **funcionando perfeitamente**, processando consultas sobre a documentação técnica da Santo Pegasus Soluciones.
 
 - ✅ Extração de PDFs: OK
 - ✅ Processamento de texto: OK
