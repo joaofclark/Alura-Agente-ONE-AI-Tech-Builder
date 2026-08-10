@@ -8,46 +8,69 @@ Agente de *RAG (Retrieval-Augmented Generation)* com base documental persistente
 ![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-green)
 
 Agente de IA desenvolvido como parte do desafio **ONE AI Tech Builder**. 
-Ele foi criado para atuar como um assistente virtual especializado na análise e consulta de 
-documentos técnicos da Santo Pegasus Soluciones, uma empresa de tecnologia do setor de saúde
+Ele foi criado para atuar como um assistente virtual especializado na análise e consulta de documentos técnicos da Santo Pegasus Soluciones, uma empresa de tecnologia do setor de saúde
 
-## 📌 Sobre o Projeto
+## 📋 Sobre o projeto
 
-O agente utiliza o **Google Gemini (Flash)** para processamento de linguagem natural e tem como 
-objetivo facilitar o acesso à informação técnica, acelerando o onboarding de novos colaboradores 
-e auxiliando times de engenharia na consulta rápida de documentação.
+Este agente permite que você "converse" com seus próprios documentos (PDF, TXT, MD ou DOCX): ele lê os arquivos, quebra o conteúdo em trechos, gera embeddings semânticos, indexa tudo com FAISS e usa o Gemini para responder perguntas *exclusivamente com base no que está nos documentos*, citando a fonte de cada resposta.
 
-## 🎯 Funcionalidades
+### Principais funcionalidades
 
-- Extração e processamento de texto de múltiplos PDFs
-- Respostas baseadas exclusivamente no conteúdo dos documentos fornecidos
-- Interface interativa no Google Colab para perguntas e respostas
-- Busca inteligente por trechos relevantes dos documentos
-- Respostas rápidas e diretas com citação das fontes
+- 📂 *Importação automática do Google Drive* — aponta para uma pasta e o agente cataloga todos os PDFs, TXTs, MDs e DOCXs nela.
+- ⬆️ *Upload manual* de arquivos direto pela interface.
+- 💾 *Base persistente* — os documentos, trechos e o índice vetorial são salvos no Drive, então nada se perde ao reiniciar o notebook.
+- 🔁 *Deduplicação por hash* — arquivos repetidos não são reprocessados.
+- 💬 *Conversa com memória* — histórico real de chat (múltiplos turnos), não só perguntas isoladas.
+- 🔎 *Painel de fontes* — mostra exatamente qual trecho de qual arquivo embasou cada resposta, com o score de similaridade.
+- 🗂️ *Gerenciador de documentos* — remove um arquivo específico da base sem precisar apagar tudo.
+- 💾 *Exportação da conversa* em .txt.
+- 🔀 *Fallback entre modelos Gemini* — se um modelo estiver indisponível ou sobrecarregado, o agente tenta automaticamente o próximo da lista (com retry para erros temporários).
+- 🎨 *Interface personalizada* — tema escuro com identidade visual própria.
 
-## 🛠️ Tecnologias Utilizadas
+## 🧱 Arquitetura técnica
 
-- **Google Gemini (Flash)** - Modelo de linguagem para respostas rápidas
-- **PyPDF2** - Extração de texto de arquivos PDF
-- **Google Colab** - Ambiente de desenvolvimento e execução
-- **Python** - Linguagem de programação
+| Camada | Tecnologia | Detalhe |
+|---|---|---|
+| Interface | Gradio (Blocks) | Tema customizado + CSS próprio |
+| Extração de texto | pypdf, python-docx | PDF, DOCX, TXT, MD |
+| Chunking | Janela deslizante por palavras | 450 palavras por trecho, sobreposição de 80 |
+| Embeddings | sentence-transformers (paraphrase-multilingual-MiniLM-L12-v2) | Multilíngue, 384 dimensões |
+| Índice vetorial | FAISS IndexFlatIP | Busca por similaridade de cosseno (vetores normalizados) |
+| Geração de resposta | Google Gemini (google-genai) | Fallback entre gemini-3.6-flash → gemini-3.5-flash → gemini-3.5-flash-lite |
+| Persistência | Google Drive | Chunks (.pkl), metadados (.json) e índice (.faiss) |
 
-## 📁 Estrutura do Projeto
+## 🚀 Como executar (Google Colab)
 
-```
+### 1. Pré-requisitos
+- Uma conta Google com acesso ao Google Colab e Google Drive.
+- Uma chave de API do [Google AI Studio](https://aistudio.google.com/apikey) (gratuita).
 
-├── challenge_one_ai_tech_builder.ipynb # Notebook principal
-├── docs/ # Documentos técnicos (PDFs)
-├── src/ # Código fonte
-│ ├── core/ # Lógica principal
-│ ├── rag/ # Sistema RAG (futuro)
-│ └── utils/ # Funções auxiliares
-├── tests/ # Testes automatizados
-├── README.md # Documentação
-├── requirements.txt # Dependências
-└── .env.example # Variáveis de ambiente
+### 2. Configurar o Secret no Colab
+1. No Colab, clique no ícone de 🔑 *Secrets* na barra lateral esquerda.
+2. Crie um novo secret chamado *ALURA_AGENTE_API_KEY*.
+3. Cole sua chave da API do Gemini como valor.
+4. Ative o acesso do notebook a esse secret.
 
-```
+### 3. Instalar as dependências
+Na primeira célula do notebook, execute:
+
+python
+!pip install -q -U gradio faiss-cpu sentence-transformers pypdf python-docx google-genai
+
+
+### 4. Rodar o agente
+Execute o script challenge_alura_agente_one_ai_tech_builder.py (ou cole o conteúdo em uma célula do Colab). Ele vai:
+
+1. Montar seu Google Drive.
+2. Criar a pasta Agente_Alura_Documentos em Meu Drive, se ainda não existir.
+3. Catalogar automaticamente qualquer documento que já esteja nessa pasta.
+4. Abrir a interface Gradio com um link público temporário (*.gradio.live).
+
+### 5. Usar a interface
+- *Aba/painel "Base de documentos"*: importe uma pasta do Drive ou envie arquivos manualmente.
+- *Painel "Pergunte aos documentos"*: digite sua pergunta e converse com o agente.
+- Use o *dropdown de remoção* para tirar um documento específico da base.
+- Use *"Exportar conversa"* para baixar o histórico em .txt.
 
 ## 📂 Documentos Analisados
 
@@ -57,13 +80,27 @@ e auxiliando times de engenharia na consulta rápida de documentação.
 - Manual de Onboarding
 - Protocolo de Resposta a Incidentes (SRE)
 
-## 🚀 Como Executar
+## 📁 Estrutura de dados no Drive
 
-1. Abra o notebook no Google Colab
-2. Configure a chave da API Gemini no gerenciador de secrets (`Alura_Agente`)
-3. Execute todas as células
-4. Faça upload dos PDFs quando solicitado
-5. Comece a fazer perguntas sobre os documentos!
+Meu Drive/
+├── Agente_Alura_Documentos/       # Pasta onde você coloca os arquivos de origem
+│   ├── relatorio.pdf
+│   └── manual.docx
+└── alura_agente_base/             # Gerada automaticamente pelo agente
+    ├── arquivos/                  # Cópia dos documentos já catalogados
+    ├── chunks.pkl                 # Trechos de texto extraídos
+    ├── metadados.json             # Metadados de cada trecho (arquivo, hash, nº do chunk)
+    ├── indice.faiss                # Índice vetorial FAISS
+    └── exportacoes/                # Conversas exportadas em .txt
+
+## ⚙️ Formatos suportados
+
+| Formato | Extensão |
+|---|---|
+| PDF | .pdf |
+| Texto simples | .txt |
+| Markdown | .md |
+| Word | .docx |
 
 ## 📝 Exemplo de Perguntas
 
