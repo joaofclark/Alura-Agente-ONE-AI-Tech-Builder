@@ -118,24 +118,6 @@ Meu Drive/
 ### Interação com o agente - pergunta respondida
 ![Exemplo de Pergunta](Prints/Challenge_Alura_Agente_pergunta_respondida.png)
 
-## 🔮 Roadmap do Projeto
-
-### 🟢 Concluído
-
-- ✅ Extração e processamento de PDFs com PyPDF2
-- ✅ Integração com Google Gemini API
-- ✅ Interface interativa no Google Colab
-
-### 🔴 Planejado
-
-- ⏳ Sistema RAG com ChromaDB
-- ⏳ Interface web com Streamlit
-- ⏳ Cache inteligente de respostas
-- 📋 API REST com FastAPI
-- 📋 Integração com Slack/Teams
-- 📋 Dashboard de métricas e monitoramento
-- 📋 Fine-tuning do modelo para HealthTech
-
 ## ✅ Status do Agente
 
 O agente está **funcionando perfeitamente**, processando consultas sobre a documentação técnica da Santo Pegasus Soluciones com **tempo médio de resposta inferior a 2 segundos**.
@@ -145,12 +127,42 @@ O agente está **funcionando perfeitamente**, processando consultas sobre a docu
 - ✅ API Gemini: OK
 - ✅ Respostas baseadas em contexto: OK
 
+## 🩺 Solução de problemas
+
+*"Nenhum modelo Gemini respondeu"*
+Normalmente é sobrecarga temporária (erro 503) ou um modelo descontinuado (erro 404). O agente já tenta 3 modelos em cascata com novas tentativas automáticas. Se ainda assim falhar em todos, é instabilidade geral da API no momento. Tente novamente em alguns minutos.
+
+*"A base está vazia"*
+Confirme se há arquivos na pasta do Drive configurada ou envie arquivos pela seção de upload manual.
+
+*Erro de Secret ausente*
+Verifique se o secret ALURA_AGENTE_API_KEY foi criado corretamente e se o notebook tem permissão de acesso a ele (toggle ativado no painel de Secrets).
+
+*Documento não é reprocessado após edição*
+A deduplicação é feita por hash do arquivo. Se você editar um documento já catalogado, ele será tratado como um arquivo novo (hash diferente). O antigo pode ser removido pelo gerenciador de documentos.
+
+## ⚠️ Limitações conhecidas
+
+- O link gradio.live é temporário e expira quando a célula do Colab é interrompida.
+- A resposta é sempre limitada ao conteúdo indexado. O agente é instruído a dizer quando não encontra a informação, em vez de inventar.
+- Chunking por palavras pode, ocasionalmente, cortar uma frase ao meio (trade-off simples de implementação).
+
+## 🛠️ Possíveis evoluções futuras
+
+- Chunking por sentenças/parágrafos em vez de janela fixa de palavras.
+- Suporte a mais formatos (planilhas, HTML, imagens com OCR).
+- Autenticação para uso multiusuário.
+- Deploy persistente (Hugging Face Spaces, Cloud Run) em vez do link temporário do Colab.
+
+## 📄 Licença
+
+Projeto acadêmico, desenvolvido para o Challenge Alura de Inteligência Artificial. Uso livre para fins de estudo.
+
 ## 🙏 Agradecimentos
 
 - **Alura** - Pelo conteúdo de excelência e metodologia que transforma vidas
 - **Oracle** - Pelo programa ONE que abre portas para novos talentos
 - **Instrutores** - Pela dedicação, paciência e conhecimento compartilhado
-- **Mentores** - Pelos feedbacks valiosos e direcionamento durante o desafio
 - **Santo Pegasus** - Pela documentação rica que serviu como base para o agente
 - **Google** - Pela API Gemini que deu vida ao assistente
 - **Comunidade ONE** - Pelas trocas e parcerias ao longo da jornada
