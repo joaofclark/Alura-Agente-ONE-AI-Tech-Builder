@@ -82,6 +82,7 @@ Execute o script challenge_alura_agente_one_ai_tech_builder.py (ou cole o conte�
 
 ## 📁 Estrutura de dados no Drive
 
+
 Meu Drive/
 ├── Agente_Alura_Documentos/       # Pasta onde você coloca os arquivos de origem
 │   ├── relatorio.pdf
