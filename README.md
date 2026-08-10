@@ -81,7 +81,6 @@ Execute o script challenge_alura_agente_one_ai_tech_builder.py (ou cole o conte�
 ## 📁 Estrutura de dados no Drive
 
 ```
-
 Meu Drive/
 ├── Agente_Alura_Documentos/       # Pasta onde você coloca os arquivos de origem
 │   ├── relatorio.pdf
@@ -92,7 +91,6 @@ Meu Drive/
     ├── metadados.json             # Metadados de cada trecho (arquivo, hash, nº do chunk)
     ├── indice.faiss                # Índice vetorial FAISS
     └── exportacoes/                # Conversas exportadas em .txt
-
 ```
 
 ## ⚙️ Formatos suportados
