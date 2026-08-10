@@ -1,3 +1,12 @@
+# 🤖 AI Knowledge Assistant — Challenge Alura Agente V2
+
+Agente de *RAG (Retrieval-Augmented Generation)* com base documental persistente no Google Drive, memória de conversa e interface web via Gradio. Desenvolvido como evolução do desafio da Alura, usando *Google Gemini* para geração de respostas e *FAISS* para busca semântica.
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Gradio](https://img.shields.io/badge/Gradio-UI-orange)
+![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-green)
+
 # Alura-Agente-ONE-AI-Tech-Builder
 
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
