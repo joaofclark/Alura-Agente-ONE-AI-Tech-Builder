@@ -54,9 +54,7 @@ Este agente permite que você "converse" com seus próprios documentos (PDF, TXT
 ### 3. Instalar as dependências
 Na primeira célula do notebook, execute:
 
-python
 !pip install -q -U gradio faiss-cpu sentence-transformers pypdf python-docx google-genai
-
 
 ### 4. Rodar o agente
 Execute o script challenge_alura_agente_one_ai_tech_builder.py (ou cole o conteúdo em uma célula do Colab). Ele vai:
